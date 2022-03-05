@@ -85,3 +85,82 @@ float vol_kerucut(float phi, int tinggi,float jari ){
 	printf("\nVol kerucut adalah  = %.2f cm3", vol);
 	return vol;
 }
+
+
+int main(){
+	
+	int sisi, panjang, lebar, tinggi, alas,tinggi_p;
+	int pilihan, pilihan2;
+	const float PHI = 3.14;
+	float jari, vol, luas;
+	
+	system("Color 0E");
+	printf("		 _____________________________________________________ \n");		
+	printf("		|                                                     |\n");
+	printf("		|                   SELAMAT DATANG                    |\n");
+	printf("		|          Program Menghitung Volume dan Luas         |\n");
+	printf("		|_____________________________________________________|\n");		
+	printf(" 		|| 1. TABUNG                                         ||\n");
+	printf("		|| 2. BOLA                                           ||\n");
+	printf(" 		|| 3. LIMAS SEGIEMPAT                                ||\n");
+	printf(" 		|| 4. PRISMA SEGITIGA                                ||\n");
+	printf(" 		|| 5. KERUCUT                                        ||\n");
+	printf("		=======================================================\n");
+	printf(" 		|| SILAHKAN DIPILIH : ");
+	scanf("%c", &pilihan);
+	
+	system("cls");
+	if (pilihan == '1'){
+		printf("\nAnda memilih Tabung \n");
+		printf("a. Luas\n");
+		printf("b. Volume\n");
+		printf ("silahkan pilih yang akan dihitung :");
+		getchar();
+		scanf("%c", &pilihan2);
+		
+		if (pilihan2 == 'a'){
+			printf("\nMasukan Jari-jari Tabung : ");
+			scanf("%f", &jari);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			
+			return 	luas = ltabung( jari, phi, tinggi);
+    		system("cls");
+		}else if(pilihan2 == 'b'){
+			printf("\nMasukan Jari-jari Tabung : ");
+			scanf("%f", &jari);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			
+			return 	vol = vtabung( jari, phi, tinggi);
+    		system("cls");
+		}
+	}else if (pilihan == '2'){
+		printf("\nAnda memilih Bola \n");
+		printf("a. Luas\n");
+		printf("b. Volume\n");
+		printf ("silahkan pilih yang akan dihitung :");
+		getchar();
+		scanf("%c", &pilihan2);
+		
+		if (pilihan2 == 'a'){
+			printf("\nMasukan Jari-jari Bola : ");
+			scanf("%f", &jari);
+			
+			return 	luas = lbola( jari, phi);
+    		system("cls");
+		}else if(pilihan2 == 'b'){
+			printf("\nMasukan Jari-jari Bola : ");
+			scanf("%f", &jari);
+			
+			return 	vol = vbola( jari, phi);
+    		system("cls");
+		}
+	}else if (pilihan == '3'){
+		printf("\nAnda memilih Limas \n");
+		printf("a. Luas\n");
+		printf("b. Volume\n");
+		printf ("silahkan pilih yang akan dihitung :");
+		getchar();
+		scanf("%c", &pilihan2);
+		
