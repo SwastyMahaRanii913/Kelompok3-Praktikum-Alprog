@@ -164,3 +164,82 @@ int main(){
 		getchar();
 		scanf("%c", &pilihan2);
 		
+		if (pilihan2 == 'a'){
+			printf("\nMasukan Sisi : ");
+			scanf("%d", &sisi);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			
+			return luas = luas_limas(sisi, tinggi);
+    		system("cls");
+		}else if (pilihan2 == 'b'){
+			printf("\nMasukan Sisi : ");
+			scanf("%d", &sisi);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			
+			return vol = vol_limas(sisi, tinggi);
+    		system("cls");
+		}	
+	}else if (pilihan == '4'){
+		printf("\nAnda memilih Prisma \n");
+		printf("a. Luas\n");
+		printf("b. Volume\n");
+		printf ("silahkan pilih yang akan dihitung :");
+		getchar();
+		scanf("%c", &pilihan2);
+		
+		if (pilihan2 == 'a'){
+			printf("\nMasukan Alasnya : ");
+			scanf("%d", &alas);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			printf("Masukan Tinggi Prisma = ");
+			scanf("%d", &tinggi_p);
+			
+			return luas = luas_prisma(alas, tinggi, tinggi_p);
+    		system("cls");
+		}else if (pilihan2 == 'b'){
+			printf("\nMasukan Alasnya : ");
+			scanf("%d", &alas);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			printf("Masukan Tinggi Prisma = ");
+			scanf("%d", &tinggi_p);
+			
+			return vol = vol_prisma(alas, tinggi, tinggi_p);
+    		system("cls");
+		}
+	}else if (pilihan == '5'){
+		printf("\nAnda memilih Kerucut \n");
+		printf("a. Luas\n");
+		printf("b. Volume\n");
+		printf ("silahkan pilih yang akan dihitung :");
+		getchar();
+		scanf("%c", &pilihan2);
+		
+		if (pilihan2 == 'a'){
+			printf("\nMasukan Garis Pelukisnya : ");
+			scanf("%d", &sisi);
+			printf("Masukan jari-jarinya = ");
+			scanf("%f", &jari);
+			
+			return luas = luas_kerucut( phi, jari, sisi);
+    		system("cls");
+		}else if (pilihan2 == 'b'){
+			printf("\nMasukan jari-jarinya = ");
+			scanf("%f", &jari);
+			printf("Masukan Tingginya = ");
+			scanf("%d", &tinggi);
+			
+			return vol = vol_kerucut(phi, tinggi, jari);
+    		system("cls");
+		}
+	}else{
+		printf("\n\n\t\t========================================================\n");
+		printf("		|           PILIHAN YANG ANDA MASUKKAN SALAH           |\n");
+		printf("		|           HARAP MASUKKAN PILIHAN YANG BENAR          |\n");
+		printf("		========================================================\n");
+	} 
+	return 0;	
+}
