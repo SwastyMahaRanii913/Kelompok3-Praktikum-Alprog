@@ -44,3 +44,45 @@ int luas_limas(int sisi, int tinggi){
 	printf("\nLuas Limas Segiempat adalah  = %d cm2", luas_limas);
 	return luas_limas;
 }
+
+int vol_limas(int sisi, int tinggi){
+	int vol;
+	
+	vol =  (0.33333) * (sisi * sisi)* tinggi;
+	printf("\nVolume Limas Segiempat adalah  = %d cm3", vol);
+	return vol;
+}
+
+int luas_prisma(int alas,int tinggi, int tinggi_p){
+	
+	int l_prisma;
+	l_prisma = (2 * (alas* tinggi)) + (3 * (tinggi_p * alas));
+	printf("\nLuas Prisma adalah  = %d cm2", l_prisma);
+	return l_prisma;
+	
+}
+
+int vol_prisma(int alas, int tinggi, int tinggi_p){
+	int vol;
+	
+	vol = (0.5 * alas * tinggi) * tinggi_p;
+	printf("\nVolume Prisma adalah  = %d cm3", vol);
+	return vol;
+}
+
+float luas_kerucut(float phi, float jari, int sisi){
+	float l_kerucut;
+	
+	l_kerucut = (phi) * (jari )* ( jari + sisi);
+	
+	printf("\nLuas Prisma adalah  = %.2f cm2", l_kerucut);
+	return l_kerucut;
+}
+
+float vol_kerucut(float phi, int tinggi,float jari ){
+	float vol;
+	
+	vol = phi*jari*jari*tinggi/3;
+	printf("\nVol kerucut adalah  = %.2f cm3", vol);
+	return vol;
+}
