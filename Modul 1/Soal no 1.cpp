@@ -8,6 +8,36 @@ void modulus();
 void menu();
 void keluar();
 
+float validasi1(){
+    float bilangan;
+    char huruf;
+    scanf("%f%c", &bilangan,&huruf);
+    if(huruf != '\n'){
+        printf("---Masukkan salah!---\n");
+        printf("\nUlang masukan angka	: ");
+        fflush(stdin);
+        validasi1();
+    }
+	else{
+        return bilangan;
+    }
+}
+
+int validasi2(){
+    int bilangan;
+    char huruf;
+    scanf("%d%c", &bilangan,&huruf);
+    if(huruf != '\n' || bilangan<0){
+        printf("---Masukkan salah!---\n");
+        printf("\nUlang masukan angka	: ");
+        fflush(stdin);
+        validasi2();
+    }
+	else{
+        return bilangan;
+    }
+}
+
 void penjumlahan(){
 	float angka1, angka2, hasil;
 	int pilih;
