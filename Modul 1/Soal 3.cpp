@@ -163,12 +163,12 @@ int main(){
 		scanf("%c", &pilihan2);
 		
 		if (pilihan2 == 'a'){
-			printf("\nMasukan Jari-jari Tabung : ");
-			scanf("%f", &jari);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
+			printf("\n\t\t Masukan Jari-jari Tabung = ");
+			jari=validasi2();
+			printf("\t\t Masukan Tingginya = ");
+			tinggi=validasi1();
+			return luas = ltabung( jari, PHI, tinggi);
 			
-			return 	luas = ltabung( jari, phi, tinggi);
     		system("cls");
 		}else if(pilihan2 == 'b'){
 			printf("\nMasukan Jari-jari Tabung : ");
