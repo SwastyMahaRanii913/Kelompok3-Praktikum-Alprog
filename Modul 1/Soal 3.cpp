@@ -96,6 +96,36 @@ float vol_kerucut(float phi, int tinggi,float jari ){
 }
 
 
+float validasi1(){
+    int bilangan;
+    char huruf;
+    scanf("%d%c", &bilangan,&huruf);
+    if(huruf != '\n'){
+        printf("\t\t---Masukkan salah!---\n");
+        printf("\n\t\t Ulang masukan angka	: ");
+        fflush(stdin);
+        validasi1();
+    }
+	else{
+        return bilangan;
+    }
+}
+
+float validasi2(){
+    float bilangan;
+    char huruf;
+    scanf("%f%c", &bilangan,&huruf);
+    if(huruf != '\n'){
+        printf("\t\t---Masukkan salah!---\n");
+        printf("\n\t\t Ulang masukan angka	: ");
+        fflush(stdin);
+        validasi2();
+    }
+	else{
+        return bilangan;
+    }
+}
+
 int main(){
 	
 	int sisi, panjang, lebar, tinggi, alas,tinggi_p;
