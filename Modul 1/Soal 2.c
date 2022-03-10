@@ -83,8 +83,8 @@ void segitigaSembarang(){
 		keluar();
 	}else{
 		fflush(stdin);
-		printf("\n\t\t\t Perhatikan pilihan yang anda inputkan!");
-		printf("\n Ingin keluar program ? [Y/N] >> ");
+		printf("\n\t\t\t\t\tPerhatikan pilihan yang anda inputkan!");
+		printf("\n\t\t\t\t\tIngin keluar program ? [Y/N] >> ");
 		scanf("%c", &pilih);
 
 		if(pilih=='y' || pilih=='Y'){
@@ -120,10 +120,13 @@ void luas_segitigasembarang(){
 		printf("\t\t\t\t\t\t          Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Apakah anda ingin menghitung kembali? -> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tApakah anda ingin menghitung kembali? -> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_segitigasembarang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -158,9 +161,9 @@ void kll_segitigasembarang(){
 		printf("\t\t\t\t\t          Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Apakah anda ingin menghitung kembali? -> ");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\t\t\t\t\tApakah anda ingin menghitung kembali? -> ");
 		scanf("%c", &ulang);
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_segitigasembarang();
@@ -195,8 +198,8 @@ void belahKetupat(){
 		keluar();
 	}else{
 		fflush(stdin);
-		printf("\n\t\t\t Perhatikan pilihan yang anda inputkan!");
-		printf("\n Ingin keluar program ? [Y/N] >> ");
+		printf("\n\t\t\t\t\tPerhatikan pilihan yang anda inputkan!");
+		printf("\n\t\t\t\t\tIngin keluar program ? [Y/N] >> ");
 		scanf("%c", &pilih);
 
 		if(pilih=='y' || pilih=='Y'){
@@ -227,10 +230,13 @@ void luas_belahketupat(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda -> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_belahketupat();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -256,9 +262,9 @@ void kll_belahketupat(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_belahketupat();
@@ -294,8 +300,8 @@ void jajarGenjang(){
 		keluar();
 	}else{
 		fflush(stdin);
-		printf("\n\t\t\t Pilih sesuai opsi di menu!");
-		printf("\n Ingin keluar program ? [Y/N] >> ");
+		printf("\n\t\t\t\t\tPilih sesuai opsi di menu!");
+		printf("\n\t\t\t\t\tIngin keluar program ? [Y/N] >> ");
 		scanf("%c", &pilih);
 
 		if(pilih=='y' || pilih=='Y'){
@@ -326,10 +332,13 @@ void luas_jajargenjang(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_jajargenjang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -357,10 +366,13 @@ void kll_jajargenjang(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_jajargenjang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -394,8 +406,8 @@ void trapesium(){
 		keluar();
 	}else{
 		fflush(stdin);
-		printf("\n\t\t\t Pilih sesuai opsi di menu!");
-		printf("\n Ingin keluar program ? [Y/N] >> ");
+		printf("\n\t\t\t\t\tPilih sesuai opsi di menu!");
+		printf("\n\t\t\t\t\tIngin keluar program ? [Y/N] >> ");
 		scanf("%c", &pilih);
 
 		if(pilih=='y' || pilih=='Y'){
@@ -432,10 +444,13 @@ void luas_trapesium(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_trapesium();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -465,10 +480,13 @@ void kll_trapesium(){
 		printf("\t\t\t\t\t Hasil : %.2f",keliling);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_trapesium();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -503,8 +521,8 @@ void lingkaran(){
 		keluar();
 	}else{
 		fflush(stdin);
-		printf("\n\t\t\t Pilih sesuai opsi di menu!");
-		printf("\n Ingin keluar program ? [Y/N] >> ");
+		printf("\n\t\t\t\t\tPilih sesuai opsi di menu!");
+		printf("\n\t\t\t\t\tIngin keluar program ? [Y/N] >> ");
 		scanf("%c", &pilih);
 
 		if(pilih=='y' || pilih=='Y'){
@@ -533,10 +551,13 @@ void luas_lingkaran(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_lingkaran();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -560,10 +581,13 @@ void kll_lingkaran(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);	
 		getch();
 		fflush(stdin);
-		printf("\nKetik 'Y' untuk menghitung kembali\n");
-		printf("Ketik 'N' untuk Exit\n");
-		printf("Masukan pilihan anda ->? >> ");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
+		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_lingkaran();
 		}else if(ulang == 'n' || ulang == 'N'){
