@@ -112,7 +112,7 @@ void luas_segitigasembarang(){
 		s2 = input();
 		printf("\t\t\t\t\t    Masukkan sisi 3 (cm)\t: "	   );
 		s3 = input();
-		printf("\t\t\t\t\t   --------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		
 		keliling = s1 + s2 + s3;
 		s = keliling/2;
@@ -126,7 +126,7 @@ void luas_segitigasembarang(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tApakah anda ingin menghitung kembali? -> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_segitigasembarang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -150,7 +150,7 @@ void kll_segitigasembarang(){
 		s2 = input();
 		printf("\t\t\t\t\t    Masukkan sisi 3 (cm)\t: "	   );
 		s3 = input();
-		printf("\t\t\t\t\t   --------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		
 		if(s1==s2&&s2==s3&&s1==s3){
 			printf("\t\t\t\t\t Segitiga sembarang tidak memiliki sisi yang sama!");
@@ -224,7 +224,7 @@ void luas_belahketupat(){
 		d1 = input();
 		printf("\t\t\t\t\t    Masukkan diagonal 2 (cm)\t: "	   );
 		d2 = input();
-		printf("\t\t\t\t\t   -------------------------------------------------------\n");
+		printf("\t\t\t\t\t-------------------------------------------------------\n");
 
 		luas = d1*d2*1/2;
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
@@ -236,7 +236,7 @@ void luas_belahketupat(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_belahketupat();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -262,10 +262,13 @@ void kll_belahketupat(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
+		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_belahketupat();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -338,7 +341,7 @@ void luas_jajargenjang(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_jajargenjang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -372,7 +375,7 @@ void kll_jajargenjang(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_jajargenjang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -450,7 +453,7 @@ void luas_trapesium(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_trapesium();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -486,7 +489,7 @@ void kll_trapesium(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_trapesium();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -557,7 +560,7 @@ void luas_lingkaran(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			luas_lingkaran();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -587,7 +590,7 @@ void kll_lingkaran(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
 		scanf("%c", &ulang);
-		printf("\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_lingkaran();
 		}else if(ulang == 'n' || ulang == 'N'){
