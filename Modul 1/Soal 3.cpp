@@ -126,10 +126,12 @@ float validasi2(){
     }
 }
 
+
 int main(){
 	
 	int sisi, panjang, lebar, tinggi, alas,tinggi_p;
-	int pilihan, pilihan2;
+	int pilihan
+	char pilihan2;
 	const float PHI = 3.14;
 	float jari, vol, luas;
 	
@@ -150,10 +152,13 @@ int main(){
 	
 	system("cls");
 	if (pilihan == '1'){
-		printf("\nAnda memilih Tabung \n");
-		printf("a. Luas\n");
-		printf("b. Volume\n");
-		printf ("silahkan pilih yang akan dihitung :");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t||                 ANDA MEMILIH TABUNG               ||\n");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t=======================================================\n");
+		printf("\t\t|| a. Luas\n");
+		printf("\t\t|| b. Volume\n");
+		printf("\t\t Silahkan pilih yang akan dihitung :");
 		getchar();
 		scanf("%c", &pilihan2);
 		
