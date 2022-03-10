@@ -120,7 +120,7 @@ void luas_segitigasembarang(){
 		printf("\t\t\t\t\t\t          Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -161,10 +161,13 @@ void kll_segitigasembarang(){
 		printf("\t\t\t\t\t          Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\tApakah anda ingin menghitung kembali? -> ");
 		scanf("%c", &ulang);
+		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
 			kll_segitigasembarang();
 		}else if(ulang == 'n' || ulang == 'N'){
@@ -230,7 +233,7 @@ void luas_belahketupat(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -262,7 +265,7 @@ void kll_belahketupat(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -325,7 +328,7 @@ void luas_jajargenjang(){
 		printf("\t\t\t\t\t	         #Luas Jajar Genjang#								\n");
 		printf("\t\t\t\t\t	            Rumus : a x t											\n");
 		printf("\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\t    Masukkan alas (cm)\t: "	   );
+		printf("\t\t\t\t\t    Masukkan alas (cm)\t\t: "	   );
 		a = input();
 		printf("\t\t\t\t\t    Masukkan tinggi (cm)\t: "	   );
 		t = input();
@@ -335,7 +338,7 @@ void luas_jajargenjang(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -369,7 +372,7 @@ void kll_jajargenjang(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -447,7 +450,7 @@ void luas_trapesium(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -483,7 +486,7 @@ void kll_trapesium(){
 		printf("\t\t\t\t\t Hasil : %.2f",keliling);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -544,8 +547,8 @@ void luas_lingkaran(){
 	char ulang;
 
 		printf("\t\t\t\t\t	           #Luas Lingkaran#								\n");
-		printf("\t\t\t\t\t	          Note : phi = 3.14						    \n");
-		printf("\t\t\t\t\t	         Rumus : phi x r x r						    \n");
+		printf("\t\t\t\t\t	          Note : phi = 3.14						    ");
+		printf("\t\t\t\t\t	         Rumus : phi x r x r						    ");
 		printf("\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\t    Masukkan jari - jari (cm)\t: "	   );
 		r = input();
@@ -554,7 +557,7 @@ void luas_lingkaran(){
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
@@ -575,7 +578,7 @@ void kll_lingkaran(){
     float keliling;
 	char ulang;
 		printf("\t\t\t\t\t	           #Keliling Lingkaran#								\n");
-		printf("\t\t\t\t\t	             Rumus : phi x d 										\n");
+		printf("\t\t\t\t\t	             Rumus : phi x d 										");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\t    Masukkan diameter (cm)\t: "	   );
 		d = input();
@@ -584,7 +587,7 @@ void kll_lingkaran(){
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);	
 		getch();
 		fflush(stdin);
-		printf("\n\t\t\t\t\t--------------------------------------------------\n\n");
+		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
