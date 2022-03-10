@@ -552,7 +552,7 @@ void luas_lingkaran(){
 		printf("\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\t    Masukkan jari - jari (cm)\t: "	   );
 		r = input();
-		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		luas = phi*r*r;
 		printf("\t\t\t\t\t Hasil : %.2f cm^2", luas);
 		getch();
@@ -582,7 +582,7 @@ void kll_lingkaran(){
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
 		printf("\t\t\t\t\t    Masukkan diameter (cm)\t: "	   );
 		d = input();
-		printf("\n\t\t\t\t\t--------------------------------------------------\n");
+		printf("\t\t\t\t\t--------------------------------------------------\n");
 		keliling = phi*d;
 		printf("\t\t\t\t\t Hasil : %.2f cm",keliling);	
 		getch();
