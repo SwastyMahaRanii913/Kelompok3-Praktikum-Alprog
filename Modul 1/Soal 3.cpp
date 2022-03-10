@@ -169,16 +169,18 @@ int main(){
 			tinggi=validasi1();
 			return luas = ltabung( jari, PHI, tinggi);
 			
+			
     		system("cls");
 		}else if(pilihan2 == 'b'){
-			printf("\nMasukan Jari-jari Tabung : ");
-			scanf("%f", &jari);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
+			printf("\n\t\tMasukan Jari-jari Tabung = ");
+			jari=validasi2();
+			printf("\t\tMasukan Tingginya = ");
+			tinggi=validasi1();
+			return vol = vtabung( jari, PHI, tinggi);
 			
-			return 	vol = vtabung( jari, phi, tinggi);
     		system("cls");
 		}
+		
 	}else if (pilihan == '2'){
 		printf("\nAnda memilih Bola \n");
 		printf("a. Luas\n");
