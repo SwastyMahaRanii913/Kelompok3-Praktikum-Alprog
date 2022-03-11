@@ -182,103 +182,117 @@ int main(){
 		}
 		
 	}else if (pilihan == '2'){
-		printf("\nAnda memilih Bola \n");
-		printf("a. Luas\n");
-		printf("b. Volume\n");
-		printf ("silahkan pilih yang akan dihitung :");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t||                  ANDA MEMILIH BOLA                ||\n");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t=======================================================\n");
+		printf("\t\t|| a. Luas\n");
+		printf("\t\t|| b. Volume\n");
+		printf("\t\t Silahkan pilih yang akan dihitung :");
 		getchar();
 		scanf("%c", &pilihan2);
-		
 		if (pilihan2 == 'a'){
-			printf("\nMasukan Jari-jari Bola : ");
-			scanf("%f", &jari);
+			printf("\n\t\tMasukan Jari-jari Bola = ");
+			jari=validasi2();
 			
-			return 	luas = lbola( jari, phi);
+			return 	luas = lbola( jari, PHI);
     		system("cls");
 		}else if(pilihan2 == 'b'){
-			printf("\nMasukan Jari-jari Bola : ");
-			scanf("%f", &jari);
+			printf("\n\t\tMasukan Jari-jari Bola = ");
+			jari=validasi2();
 			
-			return 	vol = vbola( jari, phi);
+			return 	vol = vbola( jari, PHI);
     		system("cls");
 		}
 	}else if (pilihan == '3'){
-		printf("\nAnda memilih Limas \n");
-		printf("a. Luas\n");
-		printf("b. Volume\n");
-		printf ("silahkan pilih yang akan dihitung :");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t||            ANDA MEMILIH LIMAS SEGIEMPAT           ||\n");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t=======================================================\n");
+		printf("\t\t|| a. Luas\n");
+		printf("\t\t|| b. Volume\n");
+		printf("\t\t Silahkan pilih yang akan dihitung :");
 		getchar();
 		scanf("%c", &pilihan2);
 		
 		if (pilihan2 == 'a'){
-			printf("\nMasukan Sisi : ");
-			scanf("%d", &sisi);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
+			printf("\n\t\t Masukan Sisi = ");
+			sisi=validasi1();
+			printf("\t\t Masukan Tingginya = ");
+			tinggi=validasi1();
 			
 			return luas = luas_limas(sisi, tinggi);
     		system("cls");
 		}else if (pilihan2 == 'b'){
-			printf("\nMasukan Sisi : ");
-			scanf("%d", &sisi);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
+			printf("\n\t\t Masukan Sisi = ");
+			sisi=validasi1();
+			printf("\t\t Masukan Tingginya = ");
+			tinggi=validasi1();
 			
 			return vol = vol_limas(sisi, tinggi);
     		system("cls");
 		}	
+
+
 	}else if (pilihan == '4'){
-		printf("\nAnda memilih Prisma \n");
-		printf("a. Luas\n");
-		printf("b. Volume\n");
-		printf ("silahkan pilih yang akan dihitung :");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t||            ANDA MEMILIH PRISMA SEGITIGA           ||\n");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t=======================================================\n");
+		printf("\t\t|| a. Luas\n");
+		printf("\t\t|| b. Volume\n");
+		printf("\t\t Silahkan pilih yang akan dihitung :");
 		getchar();
 		scanf("%c", &pilihan2);
-		
 		if (pilihan2 == 'a'){
-			printf("\nMasukan Alasnya : ");
-			scanf("%d", &alas);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
-			printf("Masukan Tinggi Prisma = ");
-			scanf("%d", &tinggi_p);
+			printf("\n\t\t Masukan Alasnya = ");
+			alas=validasi1();
+			printf("\t\t Masukan Tingginya = ");
+			tinggi=validasi1();
+			printf("\t\t Masukan Tinggi Prisma = ");
+			tinggi_p=validasi1();
 			
 			return luas = luas_prisma(alas, tinggi, tinggi_p);
     		system("cls");
 		}else if (pilihan2 == 'b'){
-			printf("\nMasukan Alasnya : ");
-			scanf("%d", &alas);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
-			printf("Masukan Tinggi Prisma = ");
-			scanf("%d", &tinggi_p);
+			printf("\n\t\t Masukan Alasnya = ");
+			alas=validasi1();
+			printf("\t\t Masukan Tingginya = ");
+			tinggi=validasi1();
+			printf("\t\t Masukan Tinggi Prisma = ");
+			tinggi_p=validasi1();
 			
 			return vol = vol_prisma(alas, tinggi, tinggi_p);
     		system("cls");
 		}
+
+
 	}else if (pilihan == '5'){
-		printf("\nAnda memilih Kerucut \n");
-		printf("a. Luas\n");
-		printf("b. Volume\n");
-		printf ("silahkan pilih yang akan dihitung :");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t||                 ANDA MEMILIH KERUCUT              ||\n");
+		printf("\t\t||                                                   ||\n");
+		printf("\t\t=======================================================\n");
+		printf("\t\t|| a. Luas\n");
+		printf("\t\t|| b. Volume\n");
+		printf("\t\t Silahkan pilih yang akan dihitung :");
 		getchar();
 		scanf("%c", &pilihan2);
 		
 		if (pilihan2 == 'a'){
-			printf("\nMasukan Garis Pelukisnya : ");
-			scanf("%d", &sisi);
-			printf("Masukan jari-jarinya = ");
-			scanf("%f", &jari);
+			printf("\n\t\t Masukan Garis Pelukisnya = ");
+			sisi=validasi1();
+			printf("\t\t Masukan jari-jarinya = ");
+			jari=validasi1();
 			
-			return luas = luas_kerucut( phi, jari, sisi);
+			return luas = luas_kerucut( PHI, jari, sisi);
     		system("cls");
 		}else if (pilihan2 == 'b'){
-			printf("\nMasukan jari-jarinya = ");
-			scanf("%f", &jari);
-			printf("Masukan Tingginya = ");
-			scanf("%d", &tinggi);
+			printf("\n\t\t Masukan jari-jarinya = ");
+			jari=validasi1();
+			printf("\t\t Masukan Tingginya = ");
+			tinggi=validasi1();
 			
-			return vol = vol_kerucut(phi, tinggi, jari);
+			return vol = vol_kerucut(PHI, tinggi, jari);
     		system("cls");
 		}
 	}else{
@@ -287,5 +301,5 @@ int main(){
 		printf("		|           HARAP MASUKKAN PILIHAN YANG BENAR          |\n");
 		printf("		========================================================\n");
 	} 
-	return 0;	
+	return 0;
 }
