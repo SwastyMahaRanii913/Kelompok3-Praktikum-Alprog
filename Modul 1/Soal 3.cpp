@@ -77,19 +77,19 @@ int vol_prisma(int alas, int tinggi, int tinggi_p){
 	return vol;
 }
 
-float luas_kerucut(float phi, float jari, int sisi){
+float luas_kerucut(float PHI, float jari, int sisi){
 	float l_kerucut;
 	
-	l_kerucut = (phi) * (jari )* ( jari + sisi);
+	l_kerucut = (PHI) * (jari )* ( jari + sisi);
 	printf("\t\t=======================================================\n");
 	printf("\n\t\t Luas Prisma adalah  = %.2f cm2", l_kerucut);
 	return l_kerucut;
 }
 
-float vol_kerucut(float phi, int tinggi,float jari ){
+float vol_kerucut(float PHI, int tinggi,float jari ){
 	float vol;
 	
-	vol = phi*jari*jari*tinggi/3;
+	vol = PHI*jari*jari*tinggi/3;
 	printf("\t\t=======================================================\n");
 	printf("\n\t\t Vol kerucut adalah  = %.2f cm3", vol);
 	return vol;
