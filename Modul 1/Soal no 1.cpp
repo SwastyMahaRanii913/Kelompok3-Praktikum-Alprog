@@ -29,7 +29,7 @@ int validasi2(){
     scanf("%d%c", &bilangan,&huruf);
     if(huruf != '\n' || bilangan<0){
         printf("---Masukkan salah!---\n");
-        printf("\nUlang masukan angka	: ");
+        printf("\nUlang masukan yang benar : ");
         fflush(stdin);
         validasi2();
     }
@@ -59,7 +59,7 @@ void penjumlahan(){
 	printf("2. Menu utama\n");
 	printf("3. Keluar\n");
 	printf("Pilihan selanjutnya	: ");
-	scanf("%d", &pilih);
+	pilih=validasi2();
 	
 	switch (pilih){
 		case 1:
@@ -72,7 +72,6 @@ void penjumlahan(){
 			keluar();
 		default:
 			printf("Masukan pilihan yang sesuai!\n\n");
-			getchar();
 			goto ulang;
 	}
 }
@@ -98,7 +97,7 @@ void pengurangan(){
 	printf("2. Menu utama\n");
 	printf("3. Keluar\n");
 	printf("Pilihan selanjutnya	: ");
-	scanf("%d", &pilih);
+	pilih=validasi2();
 	
 	
 	switch (pilih){
@@ -112,7 +111,6 @@ void pengurangan(){
 			keluar();
 		default:
 			printf("Masukan pilihan yang sesuai!\n\n");
-			getchar();
 			goto ulang;
 	}
 }
@@ -140,7 +138,7 @@ void perkalian(){
 	printf("2. Menu utama\n");
 	printf("3. Keluar\n");
 	printf("Pilihan selanjutnya	: ");
-	scanf("%d", &pilih);
+	pilih=validasi2();
 	
 	switch (pilih){
 		case 1:
@@ -153,7 +151,6 @@ void perkalian(){
 			keluar();
 		default:
 			printf("Masukan pilihan yang sesuai!\n\n");
-			getchar();
 			goto ulang;
 	}
 }
@@ -181,7 +178,7 @@ void pembagian(){
 	printf("2. Menu utama\n");
 	printf("3. Keluar\n");
 	printf("Pilihan selanjutnya	: ");
-	scanf("%d", &pilih);
+	pilih=validasi2();
 	
 	switch (pilih){
 		case 1:
@@ -194,7 +191,6 @@ void pembagian(){
 			keluar();
 		default:
 			printf("Masukan pilihan yang sesuai!\n\n");
-			getchar();
 			goto ulang;
 	}
 }
@@ -221,7 +217,7 @@ void modulus(){
 	printf("2. Menu utama\n");
 	printf("3. Keluar\n");
 	printf("Pilihan selanjutnya	: ");
-	scanf("%d", &pilih);
+	pilih=validasi2();
 	
 	switch (pilih){
 		case 1:
@@ -234,7 +230,6 @@ void modulus(){
 			keluar();
 		default:
 			printf("Masukan pilihan yang sesuai!\n\n");
-			getchar();
 			goto ulang;
 	}
 }
@@ -260,7 +255,7 @@ void menu(){
 	
 	ulang:
 	printf("Masukan pilihan menu	:");
-	scanf("%d", &pilih);
+	pilih=validasi2();
 	
 	switch(pilih){
 		case 1:
@@ -282,8 +277,7 @@ void menu(){
 			keluar();
 			break;
 		default:
-			printf("Masukan pilihan menu yang sesuai!\n\n");
-			getchar();
+			printf("---Masukkan salah!---\n\n");
 			goto ulang;
 			break;
 	}
