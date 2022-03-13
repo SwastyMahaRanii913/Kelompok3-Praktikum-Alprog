@@ -130,7 +130,7 @@ float validasi2(){
 int main(){
 	
 	int sisi, panjang, lebar, tinggi, alas,tinggi_p;
-	int pilihan
+	int pilihan;
 	char pilihan2;
 	const float PHI = 3.14;
 	float jari, vol, luas;
@@ -172,9 +172,9 @@ int main(){
 			
     		system("cls");
 		}else if(pilihan2 == 'b'){
-			printf("\n\t\tMasukan Jari-jari Tabung = ");
+			printf("\n\t\t Masukan Jari-jari Tabung = ");
 			jari=validasi2();
-			printf("\t\tMasukan Tingginya = ");
+			printf("\t\t Masukan Tingginya = ");
 			tinggi=validasi1();
 			return vol = vtabung( jari, PHI, tinggi);
 			
@@ -192,13 +192,13 @@ int main(){
 		getchar();
 		scanf("%c", &pilihan2);
 		if (pilihan2 == 'a'){
-			printf("\n\t\tMasukan Jari-jari Bola = ");
+			printf("\n\t\t Masukan Jari-jari Bola = ");
 			jari=validasi2();
 			
 			return 	luas = lbola( jari, PHI);
     		system("cls");
 		}else if(pilihan2 == 'b'){
-			printf("\n\t\tMasukan Jari-jari Bola = ");
+			printf("\n\t\t Masukan Jari-jari Bola = ");
 			jari=validasi2();
 			
 			return 	vol = vbola( jari, PHI);
