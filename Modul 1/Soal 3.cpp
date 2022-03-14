@@ -1,3 +1,143 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int valid();
+int cek_valid();
+
+void keluar(){
+	printf("\t==============================================\n");
+	printf("\t||      Terima kasih Sudah Menggunakan      ||\n");
+	printf("\t==============================================\n");
+}
+
+int valid(){
+	int bilangan;
+    char huruf;
+    scanf("%d%c", &bilangan,&huruf);
+    if(huruf != '\n' || bilangan<0){
+        printf("\t\t Menu Tidak Tersedia  !!\n");
+        printf("\n\t\t Masukan Pilihan Ulang : ");
+        fflush(stdin);
+        valid();
+    }
+	else{
+        return bilangan;
+    }
+}
+
+
+int cek_valid(){
+	int bilangan;
+    char huruf;
+    scanf("%d%c", &bilangan,&huruf);
+    if(huruf != '\n' || bilangan<0){
+        printf("\t\t Input Hanya Berupa Angka!!\n");
+        printf("\n\t\t Masukan Ulang Bilangan : ");
+        fflush(stdin);
+        cek_valid();
+    }
+	else{
+        return bilangan;
+    }
+}
+
+float ltabung(float jari, float PHI, int tinggi){
+	float luas;
+	
+	luas = 2 * PHI * jari * (jari + tinggi);
+	printf("\n\t\t Jadi Luas Permukaan Tabung Adalah  = %.2f cm2\n", luas);
+	
+	return luas;
+}
+
+float vtabung(float jari, float PHI, int tinggi){
+	float vol;
+	
+	vol = PHI * jari * jari * tinggi;
+	printf("\n\t\t Volume Tabung Adalah  = %.2f cm3\n", vol);
+	
+	return vol;
+}
+
+float lbola(float jari, float PHI){
+	float luas;
+	luas = 4 * PHI * ( jari * jari );
+	printf("\n\t\t Luas Permukaan Bola adalah  = %.2f cm2\n", luas);
+	return luas;
+}
+
+float vbola(float jari, float PHI){
+	float vol;
+	vol = (1.33333) * PHI * ( jari * jari * jari );
+	printf("\n\t\t Volume Bola Adalah  = %.2f cm3\n", vol);
+	return vol;
+}
+
+int luas_limas(int sisi, int tinggi){
+	
+	int luas_alas;
+	int luas_sisit;
+	int luas_limas;
+	
+	luas_alas = sisi * sisi;
+	
+	luas_sisit = 4 * ( 0.5 * sisi * tinggi );
+	
+	luas_limas = luas_alas + luas_sisit;
+	printf("\n\t\t Luas Permukaan Limas Segiempat Adalah  = %d cm2\n", luas_limas);
+	return luas_limas;
+}
+
+int vol_limas(int sisi, int tinggi){
+	int vol;
+	
+	vol =  (0.33333) * (sisi * sisi)* tinggi;
+	printf("\n\t\t Volume Limas Segiempat Adalah  = %d cm3\n", vol);
+	return vol;
+}
+
+int luas_prisma(int alas,int tinggi, int tinggi_p){
+	
+	int l_prisma;
+	l_prisma = (2 * (alas* tinggi)) + (3 * (tinggi_p * alas));
+	printf("\n\t\t Luas Permukaan Prisma Adalah  = %d cm2\n", l_prisma);
+	return l_prisma;
+	
+}
+
+int vol_prisma(int alas, int tinggi, int tinggi_p){
+	int vol;
+	
+	vol = (0.5 * alas * tinggi) * tinggi_p;
+	printf("\n\t\t Volume Prisma Adalah  = %d cm3\n", vol);
+	return vol;
+}
+
+float luas_kerucut(float PHI, float jari, int sisi){
+	float l_kerucut;
+	
+	l_kerucut = (PHI) * (jari )* ( jari + sisi);
+	printf("\n\t\t Luas Permukaan Prisma Adalah  = %.2f cm2\n", l_kerucut);
+	return l_kerucut;
+}
+
+float vol_kerucut(float PHI, int tinggi,float jari ){
+	float vol;
+	
+	vol = PHI*jari*jari*tinggi/3;
+	printf("\n\t\t Vol Kerucut Adalah  = %.2f cm3\n", vol);
+	return vol;
+}
+
+
+int main(){
+	int sisi, panjang, lebar, tinggi, alas,tinggi_p;
+	int pilihan;
+	const float PHI = 3.14;
+	float jari, vol, luas;
+	char ulang;	
+	
 	do{
 	system("Color 0E");
 	printf("		 _____________________________________________________ \n");		
