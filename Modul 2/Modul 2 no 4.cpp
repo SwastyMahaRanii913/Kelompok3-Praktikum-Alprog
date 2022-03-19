@@ -25,6 +25,8 @@ int valid(){
     }
 }
 
+
+
 int validasi1(){
 	int bilangan;
     char huruf;
@@ -40,11 +42,15 @@ int validasi1(){
     }
 }
 
+
+
 void keluar(){
 	printf("\t==============================================\n");
 	printf("\t||              TERIMA KASIH :)             ||\n");
 	printf("\t==============================================\n");
 }
+
+
 
 
 int main (){
@@ -99,10 +105,12 @@ int main (){
 					printf ("\t Ya atau Tidak (Y/T): "); 
 					scanf ("%s", &ulang);
 					system("cls");
+					}
+				}while (1);	
+					return 0;
 				}
-	}while (1);	
-		return 0;
-}
+
+
 
  void FibonacciRekursif(){
 	int pilihan;
@@ -122,8 +130,9 @@ int main (){
 			else{ 
 				printf(" %d,", fibonacciRekursif(i)); 
 			}
+			}
 		}
-	}
+	 
 	printf("\n\n\n\n");
 	printf("|           Menampilkan deret bilangan fibonacci ulang?          |\n");
 	printf("+----------------------------------------------------------------+\n");
@@ -158,9 +167,84 @@ int main (){
 				printf("|                      Tekan N untuk keluar                      |\n");
 				printf("+________________________________________________________________+\n");
 			}
+			}
+				while(1);
+			}	
+
+
+
+void FibonacciIteratif(){
+	char pilihan;
+	 int jumlahBilangan, i;
+
+		printf("Masukkan Jumlah Bilangan Fibonacci: ");
+		jumlahBilangan=validasi1();
+		
+	int deret[jumlahBilangan]; 
+
+	printf("Deret bilangan fibonacci yaitu :");
+	for(i=0; i<jumlahBilangan; i++){ 
+		if(i==0 || i==1){ 
+			deret[i] = i; 
+			if(i == 0 && i == jumlahBilangan - 1){ 
+				printf(" %d.", deret[i]);
+			}
+			else{
+				if(i == jumlahBilangan - 1){ 
+					printf(" dan %d.", deret[i]); 
+				}
+				else{ 
+					printf(" %d,", deret[i]);
+				}
+				}
+			}
+		
+			else{ 
+				deret[i] = deret[i-2] + deret[i-1]; 
+				if (i == jumlahBilangan - 1){
+				printf(" dan %d.", deret[i]);
+			}
+			else {
+				printf(" %d,", deret[i]);
+			}
+			}
 		}
-	while(1);
-}	
 
-
+	printf("\n\n\n\n");
+	printf("|           Menampilkan deret bilangan fibonacci ulang?          |\n");
+	printf("+----------------------------------------------------------------+\n");
+	printf("|    Tekan Y untuk mengulang deret bilangan fibbonaci iteratif   |\n");
+	printf("|                Tekan U untuk memilih menu ulang                |\n");
+	printf("|                      Tekan N untuk keluar                      |\n");
+	printf("+----------------------------------------------------------------+\n");
+	
+		do{
+		printf("\nMasukkan pilihan: ");
+		scanf(" %c", &pilihan);
+			
+			system("cls");
+			if(pilihan == 'Y' || pilihan == 'y'){ 
+				FibonacciIteratif(); 
+				break; 
+			}
+			else if(pilihan == 'U' || pilihan == 'u'){ 
+				main(); 
+				break; 
+			}
+			else if (pilihan == 'N' || pilihan == 'n'){ 
+				keluar(); 
+				break;	
+			}
+			else {
+				printf("+----------------------------------------------------------------+\n");
+				printf("|                        INPUTAN SALAH!!!                        |\n"); 
+				printf("+----------------------------------------------------------------+\n");
+				printf("|    Tekan Y untuk mengulang deret bilangan fibbonaci iteratif   |\n");
+				printf("|                Tekan U untuk memilih menu ulang                |\n");
+				printf("|                      Tekan N untuk keluar                      |\n");
+				printf("+________________________________________________________________+\n"); 
+			}
+			}
+				while(1);
+			}
  
