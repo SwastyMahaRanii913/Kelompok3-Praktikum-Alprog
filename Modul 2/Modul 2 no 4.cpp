@@ -248,3 +248,16 @@ void FibonacciIteratif(){
 				while(1);
 			}
  
+
+int fibonacciRekursif(int angka){
+	if(angka == 0){ 
+		return 0; 
+	}
+	else if(angka == 1){ 
+		return 1; 
+	}
+	else{ 
+		return fibonacciRekursif(angka-2) + fibonacciRekursif(angka-1); 
+	}
+	return 0;
+}
