@@ -97,7 +97,7 @@ int main (){
 					break;
 				}
 				else{
-					printf("\t|*****************************************|\n");
+					printf("\t+-----------------------------------------+\n");
 					printf("\t|  MAAF MENU PILIHAN ANDA TIDAK TERSEDIA  |\n");
 					printf("\t|         SILAHKAN INPUT ULANG!!!         |\n");
 					printf("\t|_________________________________________|\n\n");
@@ -134,6 +134,7 @@ int main (){
 		}
 	 
 	printf("\n\n\n\n");
+	printf("+----------------------------------------------------------------+\n");
 	printf("|           Menampilkan deret bilangan fibonacci ulang?          |\n");
 	printf("+----------------------------------------------------------------+\n");
 	printf("|    Tekan Y untuk mengulang deret bilangan fibbonaci rekursif   |\n");
@@ -147,7 +148,7 @@ int main (){
 			
 			system("cls");
 			if(pilihan == 'Y' || pilihan == 'y'){ 
-				FibonacciIteratif(); 
+				FibonacciRekursif(); 
 				break; 
 			}
 			else if(pilihan == 'U' || pilihan == 'u'){ 
@@ -211,6 +212,7 @@ void FibonacciIteratif(){
 		}
 
 	printf("\n\n\n\n");
+	printf("+----------------------------------------------------------------+\n");
 	printf("|           Menampilkan deret bilangan fibonacci ulang?          |\n");
 	printf("+----------------------------------------------------------------+\n");
 	printf("|    Tekan Y untuk mengulang deret bilangan fibbonaci iteratif   |\n");
