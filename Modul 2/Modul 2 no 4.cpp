@@ -148,6 +148,11 @@ int main (){
 			
 			system("cls");
 			if(pilihan == 'Y' || pilihan == 'y'){ 
+				printf("=======================================================\n");
+				printf("||                                                   ||\n");
+				printf("||            ANDA MEMILIH FIBONACCI REKURSIF        ||\n");
+				printf("||                                                   ||\n");
+				printf("=======================================================\n");
 				FibonacciRekursif(); 
 				break; 
 			}
@@ -226,6 +231,11 @@ void FibonacciIteratif(){
 			
 			system("cls");
 			if(pilihan == 'Y' || pilihan == 'y'){ 
+				printf("=======================================================\n");
+				printf("||                                                   ||\n");
+				printf("||           ANDA MEMILIH FIBONACCI ITERATIF         ||\n");
+				printf("||                                                   ||\n");
+				printf("=======================================================\n");
 				FibonacciIteratif(); 
 				break; 
 			}
