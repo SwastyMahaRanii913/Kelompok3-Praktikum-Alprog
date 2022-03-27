@@ -206,6 +206,7 @@ void akhirUlang(){
 	printf("\n\nApakah yang anda ingin lakukan setelah ini?\n\n");
 	printf(" 1. Mulai\n");
 	printf(" 2. Keluar\n");
+	printf("\nMasukan pilihan menu: ");
 	akhir = validasi1();
 	
 	switch(akhir){
