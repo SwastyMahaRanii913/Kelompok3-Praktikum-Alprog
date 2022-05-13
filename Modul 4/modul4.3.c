@@ -1,23 +1,23 @@
 #include <stdio.h>
 
-int palindrom(char *string, int jumlahhrf){							
-    int idx = jumlahhrf - 1;										
+int plin(char *str, int jmlhuruf){							
+    int idi = jmlhuruf - 1;										
     int x;
 
-    for(x = 0; x <= jumlahhrf/2; x++){
-        if(string[x] != string[idx])
+    for(x = 0; x <= jmlhuruf/2; x++){
+        if(str[x] != str[idi])
         return 0;
-        idx--;
+        idi--;
     }
     return 1;
 }
 
-void hitunghuruf(char *string, int jumlahhrf, FILE *output, int mode){
+void hhuruf(char *str, int jmlhuruf, FILE *output, int mode){
     int temp[26] = {0};												
     int x;
 
-    for(x = 0; x < jumlahhrf; x++)									
-        temp[(int)(string[x]) - 97] += 1;							
+    for(x = 0; x < jmlhuruf; x++)									
+        temp[(int)(str[x]) - 97] += 1;							
 
     for(x = 0; x < 26; x++)											
         if(temp[x] != 0){
@@ -28,9 +28,9 @@ void hitunghuruf(char *string, int jumlahhrf, FILE *output, int mode){
 		}
 }
 
-int string_len(char *string){
+int str_leg(char *str){
     int a = 0;
-    while(string[a] != 0)
+    while(str[a] != 0)
 	a++;
     return a;														
 }
@@ -47,7 +47,7 @@ int main(void){
     char kata[100] = {0};
     char loop[50] = {0};
     int val;
-    int jumlahhrf;
+    int jmlhuruf;
     
 	do{
 		FILE *output = fopen("kamuskata.txt","a");
@@ -59,14 +59,14 @@ int main(void){
 	    	getchar();
 			fprintf(output, "Kata: %s\n", kata);
 	
-	    	jumlahhrf = string_len(kata);
+	    	jmlhuruf = str_leg(kata);
 			int x;
 	
-	    	for(x = 0; x < jumlahhrf; x++){
+	    	for(x = 0; x < jmlhuruf; x++){
 	        	if((int)(kata[x]) >= 65 && (int)(kata[x]) <= 90)
 	            	kata[x] = (char)((int)(kata[x]) + 32);
 	        	if(((int)(kata[x]) < 97 || (int)(kata[x]) > 122) && (int)(kata[x]) != 32){
-	        		printf("Input huruf saja!");
+	        		printf("Hanya menerima inputan huruf!");
 	        		sleep (2);
 	        		system("cls");
 	        		val = 1;
@@ -78,11 +78,11 @@ int main(void){
 			}
 		}while(1);
 
-    	int flag = palindrom(kata, jumlahhrf);
-		printf("%s(%d) : ", kata, jumlahhrf);
-    	fprintf(output, "%s(%d) : ", kata, jumlahhrf);
+    	int flag = plin(kata, jmlhuruf);
+		printf("%s(%d) : ", kata, jmlhuruf);
+    	fprintf(output, "%s(%d) : ", kata, jmlhuruf);
 
-    	hitunghuruf(kata, jumlahhrf, output, 1);
+    	hhuruf(kata, jmlhuruf, output, 1);
 
     	if(flag == 1){
 			printf(" : Palindrom\n");
@@ -94,16 +94,16 @@ int main(void){
     	fclose(output);
     	
     	do{
-    		printf("Ingin mengulang? (y/n)\n");
+    		printf("Apa anda ingin mengulang? (y/n)\n");
     		scanf("%s", &loop);
     		getchar();
     		
         	if((int)(loop[0]) >= 65 && (int)(loop[0]) <= 90)
             	loop[0] = (char)((int)(kata[0]) + 32);
     	
-	   		if(string_len(loop) > 1 || (loop[0] != 'y' && loop[0] != 'n')){
-	   			loop[0] = 'x';
-				printf("Input y atau n saja!");
+	   		if(str_leg(loop) > 1 || (loop[0] != 'y' && loop[0] != 'n')){
+	   			loop[0] = 'y';
+				printf("Inputkan huruf y atau n!");
 				sleep (2);
 				system("cls");
 			}    	
@@ -113,8 +113,8 @@ int main(void){
     		if(loop[0] != 'y'){
 				header();				
     			printf("Kata: %s\n", kata);
-    			printf("%s(%d) : ", kata, jumlahhrf);
-    			hitunghuruf(kata, jumlahhrf, output, 0);
+    			printf("%s(%d) : ", kata, jmlhuruf);
+    			hhuruf(kata, jmlhuruf, output, 0);
     			if(flag == 1){
     				printf(" : Palindrom\n");
     			}else{
