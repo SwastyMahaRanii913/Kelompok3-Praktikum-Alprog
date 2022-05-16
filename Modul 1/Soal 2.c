@@ -124,7 +124,7 @@ void luas_segitigasembarang(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tApakah anda ingin menghitung kembali? -> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -165,7 +165,7 @@ void kll_segitigasembarang(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tApakah anda ingin menghitung kembali? -> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -269,7 +269,7 @@ void kll_belahketupat(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -342,7 +342,7 @@ void luas_jajargenjang(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -376,7 +376,7 @@ void kll_jajargenjang(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -454,7 +454,7 @@ void luas_trapesium(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -490,7 +490,7 @@ void kll_trapesium(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -561,7 +561,7 @@ void luas_lingkaran(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
@@ -591,7 +591,7 @@ void kll_lingkaran(){
 		printf("\n\t\t\t\t\tKetik 'Y' untuk menghitung kembali\n");
 		printf("\t\t\t\t\tKetik 'N' untuk Exit\n");
 		printf("\n\t\t\t\t\t--------------------------------------------------\n");
-		printf("\t\t\t\t\tMasukan pilihan anda ->? >> ");
+		printf("\t\t\t\t\tMasukan pilihan anda -> ");
 		scanf("%c", &ulang);
 		printf("\t\t\t\t\t--------------------------------------------------\n\n");
 		if(ulang == 'y' || ulang == 'Y'){
