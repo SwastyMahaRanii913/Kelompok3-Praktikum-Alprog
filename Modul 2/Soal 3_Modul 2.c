@@ -10,6 +10,7 @@ char* concat(const char *s1, const char *s2);
 int validasiInt(int *var);
 void tryagain();
 
+
 int clean(){
 	while(getchar() != '\n');
 	return 1;
@@ -28,7 +29,7 @@ int main(){
     printf("---------------------------------------------\n");
     printf("Program Konversi bilangan Desimal dan Biner  \n");
     printf("---------------------------------------------\n");
-    printf("Pilih operasi bilangan yang diinginkan :      \n");
+    printf("Pilih operasi bilanganangan yang diinginkan :      \n");
     printf("    [1] Konversi Desimal -> Biner               \n");
     printf("    [2] Konversi Biner   -> Desimal             \n");
     printf("    [0] Keluar                                  \n");
@@ -88,6 +89,7 @@ int binInput(){
             printf("\nInput salah! Silahkan coba lagi.");
             getch();
             inputbin = 0;
+//            goto input2;
 			binInput();
         }
         i++;
